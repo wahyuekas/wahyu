@@ -1,0 +1,111 @@
+header {
+    width: 100%;
+    background-color: salmon;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    position: fixed;
+}
+
+.container {
+    width: 100%;
+    margin:auto;
+    padding:0 5px;
+    font-family: sans-serif;
+}
+ul.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+ul li.logo{
+    flex: 1; 
+}
+ul li.logo img{
+    width: 130px;
+    transition: 300ms;
+}
+ul div.item{
+    display: inline-flex;
+    padding:0 25px;
+}
+ul div.item a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+ul div.item li a{
+    border: 2px solid white;
+    padding:2px 20px;
+    border-radius: 20px;
+}
+ul div.item li.daftar a{
+    box-shadow: 1px 3px 2px rgba(165,160,160,.8);
+    transition: 300ms;
+}
+ul div.item li.masuk a{
+    background-color: white;
+    color:salmon;
+    margin-left: 20px;
+    box-shadow: 1px 3px 2px rgba(165,160,160,.8);
+    transition: 300ms;
+}
+ul li.search-icon{
+    display: flex;
+    background: #f2f2f2;
+    height:30px;
+    width: 240px;
+    border-radius: 10px; 
+}
+ul li.search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    padding-right: 50px;
+    color: #000;
+    font-size: 14px;
+
+}
+ul li.search-icon button{
+    background-color: #85c1f5;
+    cursor:pointer;
+    border:none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0 5px;
+    transition: 300ms;
+}
+
+
+ul li.trolley{
+    display: flex;
+    padding-left: 30px;
+}
+ul li.trolley img{
+    transition: 300ms;
+}
+ul div.item li span{
+    color:white;
+    diplay:none;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul li.logo img:hover {
+    filter: drop-shadow(1px 2px 2px rgba(242,242,242));
+}
+ul li.search-icon button:hover{
+    box-shadow: inset 1px 1px 2px rgba(157,154,154,.5);
+}
+ul li.trolley img:hover{
+    filter:drop-shadow(0 1px 2px white);
+}
+ul div.item li.daftar a:hover{
+    box-shadow: none;
+}
+ul div.item li.masuk a:hover{
+    box-shadow: none;
+}
